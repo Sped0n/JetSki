@@ -5,7 +5,7 @@ from jetInfrared import infrared
 from jetMove import carMove
 
 GPIO.setwarnings(False)
-GPIO.setmode(GPIO.BCM)
+GPIO.setmode(GPIO.TEGRA_SOC)
 
 class Car(carMove, ultrasound, infrared):
     def __init__(self):
